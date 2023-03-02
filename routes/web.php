@@ -2,6 +2,10 @@
 
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\LaporanController;
+use App\Http\Controllers\Admin\MasyarakatController;
+use App\Http\Controllers\Admin\PengaduanController;
+use App\Http\Controllers\Admin\PetugasController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\User\UserController;
 use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
@@ -39,4 +43,9 @@ Route::prefix('admin')->group(function () {
     Route::post('/login', [AdminController::class, 'login'])->name('admin.login');
     Route::get('/logout', [AdminController::class, 'logout'])->name('logout');
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard.index');
+    Route::get('/laporan', [LaporanController::class, 'index'])->name('laporan.index');
+
+    Route::resource('pengaduan', PengaduanController::class);
+    Route::resource('petugas', PetugasController::class);
+    Route::resource('masyarakat', MasyarakatController::class);
 });

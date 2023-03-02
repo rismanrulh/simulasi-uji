@@ -27,20 +27,20 @@
             </div>
 
             <ul class="list-unstyled components">
-                <li class="">
-                    <a href="">Dashboard</a>
+                <li class="{{ Request::is('admin/dashboard') ? 'active' : '' }}">
+                    <a href="{{ route('dashboard.index')}}">Dashboard</a>
                 </li>
-                <li class="">
-                    <a href="">Pengaduan</a>
+                <li class="{{ Request::is('admin/pengaduan') ? 'active' : '' }}">
+                    <a href="{{ route('pengaduan.index')}}">Pengaduan</a>
                 </li>
-                <li class="active">
-                    <a href="">Petugas</a>
+                <li class="{{ Request::is('admin/petugas') ? 'active' : '' }}">
+                    <a href="{{ route('petugas.index')}}">Petugas</a>
                 </li>
-                <li class="">
-                    <a href="">Masyarakat</a>
+                <li class="{{ Request::is('admin/masyarakat') ? 'active' : '' }}">
+                    <a href="{{ route('masyarakat.index')}}">Masyarakat</a>
                 </li>
-                <li class="">
-                    <a href="">Laporan</a>
+                <li class="{{ Request::is('admin/laporan-admin') ? 'active' : '' }}">
+                    <a href="{{ route('laporan.index')}}">Laporan</a>
                 </li>
             </ul>
         </nav>
