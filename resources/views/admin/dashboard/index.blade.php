@@ -11,17 +11,17 @@
                 <div class="card-header">Petugas</div>
                 <div class="card-body">
                     <div class="text-center">
-                        10
+                        {{ $petugas }}
                     </div>
                 </div>
             </div>
         </div>
         <div class="col-lg-3">
             <div class="card">
-                <div class="card-header">Masyrakat</div>
+                <div class="card-header">Masyarakat</div>
                 <div class="card-body">
                     <div class="text-center">
-                        10
+                        {{ $masyarakat }}
                     </div>
                 </div>
             </div>
@@ -31,7 +31,7 @@
                 <div class="card-header">Pengaduan Proses</div>
                 <div class="card-body">
                     <div class="text-center">
-                        10
+                        {{ $proses }}
                     </div>
                 </div>
             </div>
@@ -41,7 +41,7 @@
                 <div class="card-header">Proses Selesai</div>
                 <div class="card-body">
                     <div class="text-center">
-                        10
+                        {{ $selesai }}
                     </div>
                 </div>
             </div>
