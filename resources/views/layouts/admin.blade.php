@@ -12,6 +12,21 @@
         integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
         @yield('css')
+
+        <style>
+
+        .btn-purple { 
+            background: #043a7b;
+            border: 1px solid #043a7b;
+            color: #fff;
+        }
+
+        /* .btn-purple:hover { 
+            background: #043a7b;
+            border: 1px solid #043a7b;
+            color: #fff;
+        } */
+        </style>
         
     <link rel="stylesheet" href="{{ asset('css/admin.css')}}">
     
@@ -35,6 +50,10 @@
                 </li>
                 <li class="{{ Request::is('admin/petugas') ? 'active' : '' }}">
                     <a href="{{ route('petugas.index')}}">Petugas</a>
+                </li>
+                <li class="{{ Request::is('admin/masyarakat') ? 'active' : '' }}">
+                    <a href="{{ route('masyarakat.index')}}">Masyarakat</a>
+                </li>
                 </li>
                 <li class="{{ Request::is('admin/masyarakat') ? 'active' : '' }}">
                     <a href="{{ route('masyarakat.index')}}">Masyarakat</a>

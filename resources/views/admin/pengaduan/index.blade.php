@@ -43,7 +43,7 @@
     <script src="https://cdn.datatables.net/1.13.3/js/jquery.dataTables.min.js"></script>
     <script>
         $(document).ready(function () {
-            $('#example').DataTable();
+            $('#pengaduanTable').DataTable();
         });
     </script>
 @endsection
